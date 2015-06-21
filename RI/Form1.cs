@@ -26,5 +26,10 @@ namespace RI
         {
 
         }
+
+        private void btnIndexar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Indexando", "Recuperacion de Informacion");
+        }
     }
 }
