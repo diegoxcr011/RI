@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RI
 {
-    public partial class Form1 : Form
+    public partial class btnBuscar : Form
     {
-        public Form1()
+        public btnBuscar()
         {
             InitializeComponent();
         }
@@ -30,6 +30,11 @@ namespace RI
         private void btnIndexar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Indexando", "Recuperacion de Informacion");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

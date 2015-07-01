@@ -1,6 +1,6 @@
 ﻿namespace RI
 {
-    partial class Form1
+    partial class btnBuscar
     {
         /// <summary>
         /// Required designer variable.
@@ -34,13 +34,15 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnIndexar
             // 
-            this.btnIndexar.Location = new System.Drawing.Point(206, 169);
+            this.btnIndexar.Location = new System.Drawing.Point(153, 186);
             this.btnIndexar.Name = "btnIndexar";
             this.btnIndexar.Size = new System.Drawing.Size(88, 25);
             this.btnIndexar.TabIndex = 0;
@@ -97,20 +99,40 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(265, 186);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 25);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Location = new System.Drawing.Point(153, 154);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(200, 20);
+            this.txtBusqueda.TabIndex = 7;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // btnBuscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 289);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnIndexar);
-            this.Name = "Form1";
+            this.Name = "btnBuscar";
             this.Text = "Recuperación de la Información";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,6 +144,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtBusqueda;
     }
 }
 
